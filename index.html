@@ -1,0 +1,188 @@
+<!--No looking!-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(41,189,193);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+
+
+
+#apple-wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    animation: bounce 1s infinite;
+}
+#apple {
+    display: flex;
+    
+}
+
+#stem {
+    background: #175638;
+    width: 8px;
+    height: 24px;
+    z-index: 1;
+    position: relative;
+    top: 8px;
+}
+
+
+
+#apple-left {
+  width: 50px;
+  height: 70px;
+  background: #f54b40;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: relative;
+  left: 10px;
+
+  z-index: 1;
+}
+#apple-right {
+  width: 50px;
+  height: 70px;
+  background: #f54b40;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+
+  z-index: 1;
+  position: relative;
+  right: 10px;
+}
+
+
+
+
+#eyes {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: -80px;
+  z-index: 2;
+  left: 5;
+  animation: bounce2 1s infinite;
+
+}
+
+#eyes:before,
+#eyes:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#eyes:before {
+  left: -10px;
+}
+
+#eyes:after {
+  right: -10px;
+}
+
+p {
+  text-align: center;
+}
+
+@keyframes bounce {
+    from { transform : translateY(0); }
+    to { transform : translateY(-20px); }
+}
+
+@keyframes bounce2 {
+    from { transform : translateY(0); }
+    to { transform : translateY(-5px); }
+}
+</style>
+</head>
+<body>
+
+<h1>If you were a fruit, you'd be a <em>fine-apple</em>.</h1>
+
+<div id="apple-wrapper">
+    <div id="stem"></div>
+    <div id="apple">
+          <div id="apple-left"></div>
+          <div id="apple-right"></div>
+          <div id="apple-shine"></div>
+          
+    </div>
+    <div id="eyes"></div>
+</div>
+</div>
+<p>I Love You So Much!!!</p>
+
+</body>
+</html>
